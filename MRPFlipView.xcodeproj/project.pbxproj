@@ -16,6 +16,9 @@
 		EF65303B177A411B002358E6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EF65303A177A411B002358E6 /* Default.png */; };
 		EF65303D177A411B002358E6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF65303C177A411B002358E6 /* Default@2x.png */; };
 		EF65303F177A411B002358E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF65303E177A411B002358E6 /* Default-568h@2x.png */; };
+		EF653047177A412F002358E6 /* MRPFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF653046177A412F002358E6 /* MRPFlipView.m */; };
+		EF65304A177A4147002358E6 /* FlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF653049177A4147002358E6 /* FlipViewController.m */; };
+		EF65304C177A4167002358E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF65304B177A4167002358E6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		EF65303A177A411B002358E6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EF65303C177A411B002358E6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EF65303E177A411B002358E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EF653045177A412F002358E6 /* MRPFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRPFlipView.h; sourceTree = "<group>"; };
+		EF653046177A412F002358E6 /* MRPFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRPFlipView.m; sourceTree = "<group>"; };
+		EF653048177A4147002358E6 /* FlipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipViewController.h; sourceTree = "<group>"; };
+		EF653049177A4147002358E6 /* FlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipViewController.m; sourceTree = "<group>"; };
+		EF65304B177A4167002358E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF65304C177A4167002358E6 /* QuartzCore.framework in Frameworks */,
 				EF653029177A411B002358E6 /* UIKit.framework in Frameworks */,
 				EF65302B177A411B002358E6 /* Foundation.framework in Frameworks */,
 				EF65302D177A411B002358E6 /* CoreGraphics.framework in Frameworks */,
@@ -68,9 +77,10 @@
 		EF653027177A411B002358E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EF653028177A411B002358E6 /* UIKit.framework */,
-				EF65302A177A411B002358E6 /* Foundation.framework */,
 				EF65302C177A411B002358E6 /* CoreGraphics.framework */,
+				EF65302A177A411B002358E6 /* Foundation.framework */,
+				EF65304B177A4167002358E6 /* QuartzCore.framework */,
+				EF653028177A411B002358E6 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +90,10 @@
 			children = (
 				EF653037177A411B002358E6 /* AppDelegate.h */,
 				EF653038177A411B002358E6 /* AppDelegate.m */,
+				EF653048177A4147002358E6 /* FlipViewController.h */,
+				EF653049177A4147002358E6 /* FlipViewController.m */,
+				EF653045177A412F002358E6 /* MRPFlipView.h */,
+				EF653046177A412F002358E6 /* MRPFlipView.m */,
 				EF65302F177A411B002358E6 /* Supporting Files */,
 			);
 			path = MRPFlipView;
@@ -166,6 +180,8 @@
 			files = (
 				EF653035177A411B002358E6 /* main.m in Sources */,
 				EF653039177A411B002358E6 /* AppDelegate.m in Sources */,
+				EF653047177A412F002358E6 /* MRPFlipView.m in Sources */,
+				EF65304A177A4147002358E6 /* FlipViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
